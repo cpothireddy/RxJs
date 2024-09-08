@@ -11,7 +11,9 @@ describe('CancellingObservableComponent', () => {
       declarations: [ CancellingObservableComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(CancellingObservableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
