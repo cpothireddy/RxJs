@@ -1,3 +1,8 @@
 <p>cancelling-observable works!</p>
 
 <button (click)="cancelTimer()">Cancel the interval</button>
+
+
+<div *ngFor="let timer of timers">
+    {{timer}}
+</div>
