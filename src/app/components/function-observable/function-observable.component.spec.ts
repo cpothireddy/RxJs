@@ -11,7 +11,9 @@ describe('FunctionObservableComponent', () => {
       declarations: [ FunctionObservableComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(FunctionObservableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

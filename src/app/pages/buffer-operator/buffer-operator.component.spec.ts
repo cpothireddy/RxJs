@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NewObservableComponent } from './new-observable.component';
+import { BufferOperatorComponent } from './buffer-operator.component';
 
-describe('NewObservableComponent', () => {
-  let component: NewObservableComponent;
-  let fixture: ComponentFixture<NewObservableComponent>;
+describe('BufferOperatorComponent', () => {
+  let component: BufferOperatorComponent;
+  let fixture: ComponentFixture<BufferOperatorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NewObservableComponent ]
+      declarations: [ BufferOperatorComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NewObservableComponent);
+    fixture = TestBed.createComponent(BufferOperatorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
