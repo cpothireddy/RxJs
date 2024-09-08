@@ -16,7 +16,6 @@ export class BufferOperatorComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.showData$ = fromEvent(document.getElementById('showButton')!, 'click');
-    // Here, we have created a showData$, that will be create on button click action.
   }
 
   startInterval() {
@@ -29,5 +28,4 @@ export class BufferOperatorComponent implements OnInit, AfterViewInit {
         this.intervalData.push(...data);
       });
   }
-  // Interval is a observable will emits the value for every one second, that we can see in the console with tap operator, whenever we click on the button, the showData$ observable will fire, buffer will collect all the previous values and emit at the time of showData$ fire.
 }
