@@ -41,7 +41,6 @@ export class MapOperatorComponent implements OnInit, AfterViewInit {
       .pipe(
         map((event: Event) => {
           return {
-            // return only perticular data what we need
             x: (event as PointerEvent).clientX,
             y: (event as PointerEvent).clientY,
           };
