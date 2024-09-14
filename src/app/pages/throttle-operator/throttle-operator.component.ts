@@ -16,7 +16,7 @@ export class ThrottleOperatorComponent implements OnInit {
         throttle((value) => interval(2000), { leading: true, trailing: false })
       )
       .subscribe((data) => {
-        console.log(data);
+        //console.log(data);
       });
 
     //output : 0, 2, 4,6
