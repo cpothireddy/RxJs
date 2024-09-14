@@ -41,6 +41,9 @@ import { MergeMapToOperatorComponent } from './pages/merge-map-to-operator/merge
 import { ConcatMapOperatorComponent } from './pages/concat-map-operator/concat-map-operator.component';
 import { ConcatMapToOperatorComponent } from './pages/concat-map-to-operator/concat-map-to-operator.component';
 import { ExhaustMapOperatorComponent } from './pages/exhaust-map-operator/exhaust-map-operator.component';
+import { SwitchMapOperatorComponent } from './pages/switch-map-operator/switch-map-operator.component';
+import { SwitchMapToOperatorComponent } from './pages/switch-map-to-operator/switch-map-to-operator.component';
+import { SubjectComponent } from './pages/subject/subject.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +86,9 @@ import { ExhaustMapOperatorComponent } from './pages/exhaust-map-operator/exhaus
     ConcatMapOperatorComponent,
     ConcatMapToOperatorComponent,
     ExhaustMapOperatorComponent,
+    SwitchMapOperatorComponent,
+    SwitchMapToOperatorComponent,
+    SubjectComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
