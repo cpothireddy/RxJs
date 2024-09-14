@@ -30,6 +30,10 @@ import { ThrottleOperatorComponent } from './pages/throttle-operator/throttle-op
 import { FirstOperatorComponent } from './pages/first-operator/first-operator.component';
 import { LastOperatorComponent } from './pages/last-operator/last-operator.component';
 import { DebounceOperatorComponent } from './pages/debounce-operator/debounce-operator.component';
+import { ElementAtOperatorComponent } from './pages/element-at-operator/element-at-operator.component';
+import { IgnoreElementsOperatorComponent } from './pages/ignore-elements-operator/ignore-elements-operator.component';
+import { SingleOperatorComponent } from './pages/single-operator/single-operator.component';
+import { MapOperatorComponent } from './pages/map-operator/map-operator.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +65,10 @@ import { DebounceOperatorComponent } from './pages/debounce-operator/debounce-op
     FirstOperatorComponent,
     LastOperatorComponent,
     DebounceOperatorComponent,
+    ElementAtOperatorComponent,
+    IgnoreElementsOperatorComponent,
+    SingleOperatorComponent,
+    MapOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
