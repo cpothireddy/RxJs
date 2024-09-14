@@ -28,6 +28,8 @@ import { SampleOperatorComponent } from './pages/sample-operator/sample-operator
 import { AuditOperatorComponent } from './pages/audit-operator/audit-operator.component';
 import { ThrottleOperatorComponent } from './pages/throttle-operator/throttle-operator.component';
 import { FirstOperatorComponent } from './pages/first-operator/first-operator.component';
+import { LastOperatorComponent } from './pages/last-operator/last-operator.component';
+import { DebounceOperatorComponent } from './pages/debounce-operator/debounce-operator.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,8 @@ import { FirstOperatorComponent } from './pages/first-operator/first-operator.co
     AuditOperatorComponent,
     ThrottleOperatorComponent,
     FirstOperatorComponent,
+    LastOperatorComponent,
+    DebounceOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
