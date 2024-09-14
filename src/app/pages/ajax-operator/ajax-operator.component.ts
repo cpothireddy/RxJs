@@ -11,20 +11,20 @@ export class AjaxOperatorComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    ajax(`https://jsonplaceholder.typicode.com/posts`)
-      .pipe(
-        map((response) => {
-          return response;
-          let data = [];
-          for (let post of response.response) {
-            data.push(post.title);
-          }
-          return data;
-        })
-      )
-      .subscribe((data) => {
-        console.log(data);
-      });
+    // ajax(`https://jsonplaceholder.typicode.com/posts`)
+    //   .pipe(
+    //     map((response) => {
+    //       return response;
+    //       let data = [];
+    //       for (let post of response.response) {
+    //         data.push(post.title);
+    //       }
+    //       return data;
+    //     })
+    //   )
+    //   .subscribe((data) => {
+    //     console.log(data);
+    //   });
 
     ajax
       .getJSON(`https://jsonplaceholder.typicode.com/posts`)
