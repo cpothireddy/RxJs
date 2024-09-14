@@ -35,6 +35,9 @@ import { MergeMapToOperatorComponent } from './pages/merge-map-to-operator/merge
 import { ConcatMapOperatorComponent } from './pages/concat-map-operator/concat-map-operator.component';
 import { ConcatMapToOperatorComponent } from './pages/concat-map-to-operator/concat-map-to-operator.component';
 import { ExhaustMapOperatorComponent } from './pages/exhaust-map-operator/exhaust-map-operator.component';
+import { SwitchMapOperatorComponent } from './pages/switch-map-operator/switch-map-operator.component';
+import { SwitchMapToOperatorComponent } from './pages/switch-map-to-operator/switch-map-to-operator.component';
+import { SubjectComponent } from './pages/subject/subject.component';
 
 const routes: Routes = [
   {
@@ -73,6 +76,8 @@ const routes: Routes = [
       { path: 'concatmap', component: ConcatMapOperatorComponent },
       { path: 'concatmapto', component: ConcatMapToOperatorComponent },
       { path: 'exhaustmap', component: ExhaustMapOperatorComponent },
+      { path: 'switchmap', component: SwitchMapOperatorComponent },
+      { path: 'switchmapto', component: SwitchMapToOperatorComponent },
       {
         path: 'distinctuntilchanged',
         component: DistinctUntilChangedOperatorComponent,
@@ -83,6 +88,7 @@ const routes: Routes = [
       },
     ],
   },
+  { path: 'subject', component: SubjectComponent },
 ];
 
 @NgModule({
