@@ -11,8 +11,8 @@ export class SampleOperatorComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    interval(500) // this will emit for every half second
-      .pipe(sample(interval(1000))) // sample operator will hold to finish 1 second and it will execute output, that means alternative value will print here, that means the recent emit emited value before sample observable
+    interval(500)
+      .pipe(sample(interval(1000)))
       .subscribe((data) => {
         console.log(data);
       });
