@@ -12,7 +12,7 @@ export class SkipOperatorComponent implements OnInit {
 
   ngOnInit(): void {
     of(1, 2, 3)
-      .pipe(skip(1))
+      .pipe(skip(5))
       .subscribe(
         (data) => {
           console.log(data);
