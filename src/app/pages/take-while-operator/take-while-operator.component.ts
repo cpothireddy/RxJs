@@ -12,7 +12,7 @@ export class TakeWhileOperatorComponent implements OnInit {
 
   ngOnInit(): void {
     interval(500)
-      .pipe(takeWhile((x, i) => x < 5, true))
+      .pipe(takeWhile((x, i) => x < 5, true)) // here the true means inclusive of last value
       .subscribe(
         (data) => {
           console.log(data);
