@@ -47,7 +47,6 @@ export class SubjectComponent implements OnInit {
     };
     observable$.subscribe(observer1); //1,2,3,complete
     observable$.subscribe(observer2); //1,2,3, complete
-    // Here the observable$ is executing two times, i.e one for observer1 and another one is for observer2. that means one observer will execute one time is called unicasting.
   }
 
   subjectAsObservable() {
@@ -81,8 +80,5 @@ export class SubjectComponent implements OnInit {
     subject.subscribe(observer2);
 
     observable$.subscribe(subject);
-    //Here, the subject is subscribing to observable, and so that data will pass to subject, and observers are subscribing to suject, so subject will send that data to mulitple observers at a time
-    // output is
-    //observer 11 21 12 22, so all values are sharing equally to the observers. that is sharing the data to multiple observers at a time is called multi casting.
   }
 }
