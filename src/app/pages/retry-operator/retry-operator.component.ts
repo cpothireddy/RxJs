@@ -18,11 +18,10 @@ export class RetryOperatorComponent implements OnInit {
 
     source$
       .pipe(
-        retry(2),// it will re run the source observable when error occure, here 2 times will occur
+        retry(2),
         catchError((error) => {
           return of('a', 'b');
         })
-        // catchError is returning the another observable if there is an error
       )
       .subscribe((data) => {
         console.log(data);
