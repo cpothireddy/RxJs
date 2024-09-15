@@ -23,7 +23,5 @@ export class ConcatOperatorComponent implements OnInit {
     concat(source1$, source2$).subscribe((data) => {
       console.log(data);
     });
-    // Here the concat will execute the observables one by one, first it will execute source1$ and then source2$ will execute.
-    // in above case source1$ is throwing an error right, so it will never go to source2$.
   }
 }
