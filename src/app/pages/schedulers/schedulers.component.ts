@@ -22,12 +22,4 @@ export class SchedulersComponent implements OnInit {
     );
     console.log('script Ending');
   }
-  // output:
-  // script starting
-  // Queue Scheduler
-  // script Ending
-  // Asap Scheduler
-  // Async Scheduler
-  // explanation: line by line is a synchronous code, in every JS, synchronous code will execute first the same way, first script starting and then the queue scheduler is a synchronous execution so, it follows and then script ending
-  // after that execution will check in micro task, so asap will have the high priority it will execute and then async scheduler will execute.
 }
