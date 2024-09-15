@@ -11,7 +11,6 @@ export class VoidSubjectComponent implements OnInit {
 
   ngOnInit(): void {
     let subject$ = new Subject<number>();
-    // the above suject will accept number data only
 
     subject$.subscribe((data) => {
       console.log(data);
@@ -19,7 +18,6 @@ export class VoidSubjectComponent implements OnInit {
 
     subject$.next(1);
     subject$.next(2);
-    
 
     let subject2$ = new Subject<any>();
 
@@ -29,16 +27,13 @@ export class VoidSubjectComponent implements OnInit {
 
     subject2$.next('Hai Leela');
     subject2$.next(2);
-    // subject2$.next();
-    // sending empty data in subject is not possible here, so we have void option
 
     let subject3$ = new Subject<void>();
 
     subject3$.subscribe((data) => {
-      console.log(data); // undefined
+      console.log(data);
     });
 
     subject3$.next();
-    // using void, we can send the empty data but observable is notified.
   }
 }
