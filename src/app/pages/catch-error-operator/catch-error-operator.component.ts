@@ -19,12 +19,9 @@ export class CatchErrorOperatorComponent implements OnInit {
     source$
       .pipe(
         catchError((error, caught) => {
-          //throw 'error message goes here'; // we can just return the error
           return caught;
-          // here return caught means we are re running the source observable again and again, by default it is infinite times utill get the success.
         }),
         take(5)
-        // here the take(5), will consider that the source will execute 5 tiumes only
       )
       .subscribe({
         next: (data) => {
