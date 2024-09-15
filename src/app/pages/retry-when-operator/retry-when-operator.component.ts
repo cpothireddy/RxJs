@@ -25,10 +25,7 @@ export class RetryWhenOperatorComponent implements OnInit {
           if (!usersData.responseStatus.startsWith('2')) {
             throw usersData.responseStatus;
           }
-          // if the response is not starts with 2. i.e 200 then it will throw error and that error will catch retryWhen
         }),
-        // retry(3), // retry will work but we are not sure to run howmany time, so we should use retryWhen
-        // the below code we have a condition in the retryWhen, such a way that if we receive the status code other than 500 then
         retryWhen((error) => {
           return error.pipe(
             tap((status) => {
