@@ -20,6 +20,7 @@ export class AsyncSubjectComponent implements OnInit {
     asyncSubject$.next(2);
     asyncSubject$.next(3);
     // asyncSubject will never send any value without complete the observable.
+    // once we complete the observable then, asyncSubject will emit the lastest values to all the observers including newly created ones.
 
     setTimeout(() => {
       asyncSubject$.subscribe((data) => {
