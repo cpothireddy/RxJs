@@ -25,17 +25,11 @@ export class CombineLatestOperatorComponent implements OnInit {
     let source2$ = new Observable((observer) => {
       setTimeout(() => {
         observer.next(10);
-        observer.error('error');
-      }, 1000);
+      }, 5000);
     });
 
     combineLatest([source1$, source2$]).subscribe((data) => {
       console.log(data);
     });
-    // in what is the output in below case for combineLatest
-    // observer.next(1);
-    // observer.next(2);
-    // observer.error();
-    // 1 ,2 and error
   }
 }
