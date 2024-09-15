@@ -21,6 +21,5 @@ export class RaceOperatorComponent implements OnInit {
     race(source1$, source3$, source2$).subscribe((data) => {
       console.log(data);
     });
-    // here, who ever emits the data first that will take into the consideration and remaining all are automatically unsubscribe, that first emait maybe a sucess or error, anything it will consider the first emit only
   }
 }
