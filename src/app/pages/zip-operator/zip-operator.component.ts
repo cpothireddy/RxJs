@@ -13,7 +13,6 @@ export class ZipOperatorComponent implements OnInit {
     let source1$ = of(1, 2, 3, 4, 5);
     let source2$ = of('a', 'b', 'c', 'd', 'e');
     let source3$ = of(100, 200, 300, 400, 500);
-    // output will be [1,a,100] [2,b,200].
 
     zip([source1$, source2$, source3$], (a, b, c) => {
       return a + ',' + b + ',' + c;
