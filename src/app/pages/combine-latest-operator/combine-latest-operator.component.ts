@@ -28,16 +28,8 @@ export class CombineLatestOperatorComponent implements OnInit {
       }, 5000);
     });
 
-    //source1$ observable it will emit the value for every second and in source2$ observable it will emit the data after 5 seconds.
-    // here the combineLatest nature is to wait for the atlease one emitted value from each and every observable
-    // so, after 5 seconds source2$ emitted right, now the combineLatest will consider the latest value from source1$, when ever the source2$ emit the data.
-    // so, it will wait till last emit from each an devery observable and then it will consider the lastest emited values from the other observables.
-
     combineLatest([source1$, source2$]).subscribe((data) => {
       console.log(data);
     });
-    // 1. atleast one value should be emit from the all observables.
-    // 2. it will consider the latest data.
-    // 3. if there is any error in any of the observable then entire combineLatest opeation will stop the execution.
   }
 }
