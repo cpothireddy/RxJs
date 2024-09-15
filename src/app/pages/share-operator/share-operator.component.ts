@@ -19,6 +19,7 @@ export class ShareOperatorComponent implements OnInit {
 
   ngOnInit(): void {
     let source$ = interval(1000).pipe(share());
+    // share will use to convert cold to hot observable, it will start the send values, whenever we have atleast one subscriber.
 
     source$.subscribe((data) => {
       console.log(data);
