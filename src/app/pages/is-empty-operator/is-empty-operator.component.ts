@@ -17,7 +17,6 @@ export class IsEmptyOperatorComponent implements OnInit {
         observer.complete();
       }, 4000);
     });
-    // isEmpty() will return as soon as it get the emitted value from the observable.
 
     source$.pipe(isEmpty()).subscribe((data) => {
       if (data) {
@@ -27,7 +26,6 @@ export class IsEmptyOperatorComponent implements OnInit {
       }
     });
 
-    // count() will wait till to complete the observable.
     source$.pipe(count()).subscribe((data) => {
       if (data) {
         console.log('not empty Observable by count');
