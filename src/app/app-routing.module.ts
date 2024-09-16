@@ -63,6 +63,8 @@ import { DeferOperatorComponent } from './pages/defer-operator/defer-operator.co
 import { RangeOperatorComponent } from './pages/range-operator/range-operator.component';
 import { GenerateOperatorComponent } from './pages/generate-operator/generate-operator.component';
 import { TimerOperatorComponent } from './pages/timer-operator/timer-operator.component';
+import { ScanOperatorComponent } from './pages/scan-operator/scan-operator.component';
+import { CountOperatorComponent } from './pages/count-operator/count-operator.component';
 
 const routes: Routes = [
   {
@@ -122,6 +124,8 @@ const routes: Routes = [
       { path: 'range', component: RangeOperatorComponent },
       { path: 'generate', component: GenerateOperatorComponent },
       { path: 'timer', component: TimerOperatorComponent },
+      { path: 'scan', component: ScanOperatorComponent },
+      { path: 'count', component: CountOperatorComponent },
       {
         path: 'distinctuntilchanged',
         component: DistinctUntilChangedOperatorComponent,
