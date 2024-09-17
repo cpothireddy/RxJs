@@ -13,11 +13,11 @@ export class FindOperatorComponent implements OnInit {
     let source$ = of(1, 2, 3, 10, 3, 20);
 
     source$.pipe(find((val) => val > 20)).subscribe((data) => {
-      console.log(data); // if the condition is not met, then it will return undefined
+      console.log(data);
     });
 
     source$.pipe(first((val) => val > 20)).subscribe((data) => {
-      console.log(data); // // if the condition is not met, then it will return error
+      console.log(data);
     });
   }
 }
