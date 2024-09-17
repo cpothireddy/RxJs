@@ -13,11 +13,11 @@ export class FindIndexOperatorComponent implements OnInit {
     let source$ = of(121, 1, 2, 13, 3, 4, 10, 5, 12);
 
     source$.pipe(findIndex((val) => val > 200)).subscribe((data) => {
-      console.log(data);// if no find, it returns -1
+      console.log(data);
     });
 
     source$.pipe(first((val) => val > 200)).subscribe((data) => {
-      console.log(data);// if no find this will return error
+      console.log(data);
     });
   }
 }
