@@ -12,8 +12,8 @@ export class EveryOperatorComponent implements OnInit {
   ngOnInit(): void {
     let source$ = of(1, 2, 3, 4, 5, 6);
 
-    source$.pipe(every((val) => val < 2)).subscribe((data) => {
-      console.log(data); // every value should satisfy the condition, it returns true if satisfies, but returns false, if atleaset one not satisfied.
+    source$.pipe(every((val) => val < 7)).subscribe((data) => {
+      console.log(data);
     });
   }
 }
