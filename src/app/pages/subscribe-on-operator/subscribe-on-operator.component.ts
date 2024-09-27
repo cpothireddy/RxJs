@@ -13,7 +13,6 @@ export class SubscribeOnOperatorComponent implements OnInit {
     console.log('start scrpting');
     let source$ = of(1, 2, 3, 4, 5).pipe(subscribeOn(asyncScheduler));
     let source2$ = of(10, 20, 30, 40, 50);
-    // by defualt the execution will be synchrounous so here this will move to block stage, so to make asynchrounous execution we should use the scheduler.
 
     merge(source2$, source$).subscribe((data) => {
       console.log(data);
