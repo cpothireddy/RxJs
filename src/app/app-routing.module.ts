@@ -80,6 +80,12 @@ import { MaterializeOperatorComponent } from './pages/materialize-operator/mater
 import { DematerializeOperatorComponent } from './pages/dematerialize-operator/dematerialize-operator.component';
 import { DelayOperatorComponent } from './pages/delay-operator/delay-operator.component';
 import { CombineLatestAllOperatorComponent } from './pages/combine-latest-all-operator/combine-latest-all-operator.component';
+import { ConcatAllOperatorComponent } from './pages/concat-all-operator/concat-all-operator.component';
+import { ExhaustAllOperatorComponent } from './pages/exhaust-all-operator/exhaust-all-operator.component';
+import { MergeAllOperatorComponent } from './pages/merge-all-operator/merge-all-operator.component';
+import { SwitchAllOperatorComponent } from './pages/switch-all-operator/switch-all-operator.component';
+import { StartWithOperatorComponent } from './pages/start-with-operator/start-with-operator.component';
+import { WithLatestFromOperatorComponent } from './pages/with-latest-from-operator/with-latest-from-operator.component';
 
 const routes: Routes = [
   {
@@ -154,7 +160,16 @@ const routes: Routes = [
       { path: 'materialize', component: MaterializeOperatorComponent },
       { path: 'dematerialize', component: DematerializeOperatorComponent },
       { path: 'delay', component: DelayOperatorComponent },
-      { path: 'combinelatestall', component: CombineLatestAllOperatorComponent },
+      { path: 'startwith', component: StartWithOperatorComponent },
+      {
+        path: 'combinelatestall',
+        component: CombineLatestAllOperatorComponent,
+      },
+      { path: 'concatall', component: ConcatAllOperatorComponent },
+      { path: 'exhaustall', component: ExhaustAllOperatorComponent },
+      { path: 'mergeall', component: MergeAllOperatorComponent },
+      { path: 'switchall', component: SwitchAllOperatorComponent },
+      { path: 'withlatestfrom', component: WithLatestFromOperatorComponent },
       {
         path: 'distinctuntilchanged',
         component: DistinctUntilChangedOperatorComponent,

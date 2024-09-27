@@ -16,7 +16,6 @@ export class CombineLatestAllOperatorComponent implements OnInit {
       .pipe(
         map((value) => {
           return interval(1000).pipe(take(4));
-          // combineLatestAll will combines the data whenever we have an emit from the inner observable
         }),
         combineLatestAll()
       )
