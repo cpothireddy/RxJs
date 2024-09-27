@@ -15,5 +15,13 @@ export class DelayOperatorComponent implements OnInit {
     source$.pipe(delay(2000)).subscribe((data) => {
       console.log(data);
     });
+    // the above one will wait for 2 sec for source observble, the output will diaplay after two seconds, the will wait on entire source observable.
+
+    source$
+      .pipe(concatMap((value) => of(value).pipe(delay(2000))))
+      .subscribe((data) => {
+        console.log(data);
+      });
+      // the above one will wait 2 sec for every value, emited by the source observable.
   }
 }
