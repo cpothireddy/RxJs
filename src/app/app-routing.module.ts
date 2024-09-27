@@ -75,6 +75,10 @@ import { EveryOperatorComponent } from './pages/every-operator/every-operator.co
 import { DefaultIfEmptyOperatorComponent } from './pages/default-if-empty-operator/default-if-empty-operator.component';
 import { ToArrayOperatorComponent } from './pages/to-array-operator/to-array-operator.component';
 import { SubscribeOnOperatorComponent } from './pages/subscribe-on-operator/subscribe-on-operator.component';
+import { ObserveOnOperatorComponent } from './pages/observe-on-operator/observe-on-operator.component';
+import { MaterializeOperatorComponent } from './pages/materialize-operator/materialize-operator.component';
+import { DematerializeOperatorComponent } from './pages/dematerialize-operator/dematerialize-operator.component';
+import { DelayOperatorComponent } from './pages/delay-operator/delay-operator.component';
 
 const routes: Routes = [
   {
@@ -146,6 +150,9 @@ const routes: Routes = [
       { path: 'defaultifempty', component: DefaultIfEmptyOperatorComponent },
       { path: 'toarray', component: ToArrayOperatorComponent },
       { path: 'subscribeon', component: SubscribeOnOperatorComponent },
+      { path: 'materialize', component: MaterializeOperatorComponent },
+      { path: 'dematerialize', component: DematerializeOperatorComponent },
+      { path: 'delay', component: DelayOperatorComponent },
       {
         path: 'distinctuntilchanged',
         component: DistinctUntilChangedOperatorComponent,
